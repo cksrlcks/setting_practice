@@ -27,4 +27,4 @@ jobs:
       - name: Deploy to Vercel
         run: |
           npm install -g vercel
-          vercel --token ${{ secrets.VERCEL_TOKEN }} --prod --confirm --cwd ./storybook-static
+          vercel --token ${{ secrets.VERCEL_TEST_TOKEN }} --prod --confirm --cwd ./storybook-static
